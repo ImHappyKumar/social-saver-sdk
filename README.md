@@ -11,6 +11,7 @@ This SDK is **paid and protected**.
 To use any downloader function, you must pass a valid `authToken`.
 
 ### How to Get an `authToken`:
+
 - 🌐 Visit: [https://happykumar.com](https://happykumar.com)
 - 📧 Email: **happykumar.info@gmail.com**
 
@@ -63,7 +64,8 @@ const {
 async function fetchInstagramData() {
   try {
     const result = await socialSaver.instagramDownloader(
-      "https://www.instagram.com/example-url"
+      "https://www.instagram.com/example-url",
+      authToken
     );
     console.log("Fetched Instagram media details:", result);
   } catch (error) {
@@ -80,7 +82,8 @@ fetchInstagramData();
 async function fetchFacebookData() {
   try {
     const result = await socialSaver.facebookDownloader(
-      "https://www.facebook.com/example-url"
+      "https://www.facebook.com/example-url",
+      authToken
     );
     console.log("Fetched Facebook media details:", result);
   } catch (error) {
@@ -97,7 +100,8 @@ fetchFacebookData();
 async function fetchTwitterData() {
   try {
     const result = await socialSaver.twitterDownloader(
-      "https://x.com/example-url"
+      "https://x.com/example-url",
+      authToken
     );
     console.log("Fetched Twitter media details:", result);
   } catch (error) {
@@ -114,7 +118,8 @@ fetchTwitterData();
 async function fetchSnapchatData() {
   try {
     const result = await socialSaver.snapchatDownloader(
-      "https://snapchat.com/example-url"
+      "https://snapchat.com/example-url",
+      authToken
     );
     console.log("Fetched Snapchat media details:", result);
   } catch (error) {
@@ -131,7 +136,8 @@ fetchSnapchatData();
 async function fetchTiktokData() {
   try {
     const result = await socialSaver.tiktokDownloader(
-      "https://www.tiktok.com/example-url"
+      "https://www.tiktok.com/example-url",
+      authToken
     );
     console.log("Fetched TikTok media details:", result);
   } catch (error) {
@@ -148,7 +154,8 @@ fetchTiktokData();
 async function fetchPinterestData() {
   try {
     const result = await socialSaver.pinterestDownloader(
-      "https://in.pinterest.com/example-url"
+      "https://in.pinterest.com/example-url",
+      authToken
     );
     console.log("Fetched Pinterest media details:", result);
   } catch (error) {
